@@ -7,10 +7,9 @@
 
 <script type="text/javascript">
 
-fetch('http://indicadoresdeldia.cl/')
+fetch('http://indicadoresdeldia.cl/webservice/indicadores.xml')
   .then(function(response) {
       var d1 = document.getElementById('root'); 
-      d1.insertAdjacentHTML('afterend', response);
       console.log(response);
   })
   .then(function(myJson) {
