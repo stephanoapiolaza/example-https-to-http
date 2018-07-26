@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+
+<blockquote><h1>Evaluando https to http</h1></blockquote>
+<div id="root"></div>
+
+<script type="text/javascript">
+
+fetch('http://indicadoresdeldia.cl/')
+  .then(function(response) {
+      var d1 = document.getElementById('root'); 
+      d1.insertAdjacentHTML('afterend', response);
+      console.log(response);
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
+
+</script>
+</body>
+</html>
